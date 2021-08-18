@@ -1,0 +1,26 @@
+<div class="container m-4">
+  <div class="card bg-light border-0 shadow mb-4">
+    <div class="card-body">
+      <h1 class="card-title"><%= @flat.name %></h1>
+      <h5 class="card-subtitle"><%= @flat.address %></h5>
+    </div>
+  </div>
+  <div class="card bg-light border-0 shadow mb-4">
+    <div class="card-body">
+      <h2>A bit more about this flat...</h2>
+      <p><%= @flat.description %></p>
+    </div>
+  </div>
+  <div class="card bg-light border-0 shadow">
+    <div class="card-body">
+      <h2>Details</h2>
+      <p>
+        <%= icon('fas', 'users') %>
+        <%= @flat.number_of_guests %>
+        <%= icon('fas', 'euro-sign') %>
+        <%= @flat.price_per_night %>
+      </p>
+
+    </div>
+  </div>
+</div>
